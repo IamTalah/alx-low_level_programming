@@ -1,17 +1,15 @@
 #include "main.h"
 /**
- *print_numbers - prints 0 - 9.
- *
- *Return: void.
- */
+*print_numbers - prints 0 - 9.
+*/
 void print_numbers(void)
 {
 	int i;
 	
-	char digits[] = "0123456789\n";
-	for (i = 0; i < 11; i++)
+	for (i = 0; i <= 9; i++)
 	{
-		_putchar(digits[i]);
+		_putchar((i % 10) + '0');
 	}
+	_putchar('\n');
 }
 
