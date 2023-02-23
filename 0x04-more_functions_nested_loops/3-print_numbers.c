@@ -6,12 +6,12 @@
  */
 void print_numbers(void)
 {
-	char i;
-
-	for (i = '0'; i <= '9'; i++)
+	int i;
+	
+	char digits[] = "0123456789\n";
+	for (i = 0; i < 11; i++)
 	{
-		_putchar(i);
+		_putchar(digits[i]);
 	}
-	_putchar('\n');
 }
 
